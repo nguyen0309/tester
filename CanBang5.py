@@ -14,7 +14,7 @@ cv.imshow("r", r)
 
 plt.hist(b.ravel(), 255, [0, 255])
 plt.hist(g.ravel(), 255, [0, 255])
-plt.hist(r.ravel(), 255, [0, 255])
+plt.hist(r.ravel(), 255, [0, 256])
 
 hist = cv.calcHist([img], [0], None, [255], [0, 255])
 plt.plot(hist)
